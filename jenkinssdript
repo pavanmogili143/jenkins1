@@ -1,0 +1,19 @@
+node {
+
+stage('Build'){
+	echo "Build"
+     }
+stage('Nexus upload'){
+        echo "Upload the Security check"
+     }
+stage('Security check'){
+        echo "Perform the Security check"
+     }
+stage('Code Quality check'){
+        echo "code Quality Analysis"
+     }
+stage('Deploy'){
+        echo "Deploying the Artifact to the Server"
+}
+
+}
